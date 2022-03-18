@@ -1,7 +1,8 @@
 const Footer = () => {
+    const author = "Habib";
     return (
         <footer>
-            <p>Copyright &copy; 2022</p>
+            <p>{author} 2022</p>
         </footer>
         
     )
