@@ -29,14 +29,68 @@
  }
 
  .contentSection {
-
+    width: 300px;
  }
 
  .contentSection .displayBox {
-     width: 300px;
-     height: 300px;
+     min-width: 100%;
+     min-height: 300px;
      border: 1px solid black;
      margin: 10px auto;
      border-radius: 15px;
-     box-shadow: 2px 2px 5px black;
+     box-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
  }
+
+ .contentSection .displayBox p{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .contentSection .colorNameOutput {
+    font-size: 1.5rem;
+    padding: 10px;
+ }
+
+ .contentSection .hexValueOutput {
+    font-size: 1.5rem;
+}
+
+form {
+    min-width: 300px;
+}
+
+form label{
+    position: absolute;
+    left: -99999px;
+}
+
+#input__text {
+     margin: 20px 0 10px;
+     padding: 10px;
+     font-size: inherit;
+     width: 100%;
+     border-radius: 10px;
+     box-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.button {
+     /* margin: 20px 0 10px; */
+     padding: 10px;
+     font-size: inherit;
+     width: 100%;
+     border-radius: 10px;
+     box-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+     background-color: #f3f3f3;
+}
+
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 24px;
+    }
+  }
+  

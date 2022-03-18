@@ -2,7 +2,7 @@ import { useState} from 'react';
 
 import Display from './Display';
 import Input from './Input';
-import Button from './Button'
+
 
 const Content = () => {
     const [colorValue, setColorValue] = useState('');
@@ -17,11 +17,10 @@ const Content = () => {
             <Input 
                 colorValue={colorValue}
                 setColorValue={setColorValue}
-                setHexValue={setHexValue}/>
-            <Button 
+                setHexValue={setHexValue}
                 isDarkText={isDarkText}
-                setIsDarkText={setIsDarkText}
-            />
+                setIsDarkText={setIsDarkText}/>
+            
        </section>
     )
 }
